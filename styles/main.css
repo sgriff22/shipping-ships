@@ -1,0 +1,32 @@
+body {
+    background-color:steelblue;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+ul {
+    list-style-type: none; 
+    padding: 0;
+}
+
+li {
+    background-color: azure;
+    margin: 7px 0;
+    padding: 10px;
+}
+
+.dockList, .haulerList, .shipList {
+    border: dotted azure 2px;
+    padding: 20px;
+    margin: 0;
+    flex-basis: 25%;
+}
+
+#container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+#container h1 {
+    flex-basis: 100%;
+}

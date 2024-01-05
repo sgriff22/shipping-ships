@@ -1,0 +1,30 @@
+title Shipping Ships
+
+participant Main
+participant Docks
+
+participant Haulers
+participant Ships
+
+participant Database
+
+Main->Docks:Get a list of docks
+Docks->Database:Grab them from database
+Docks<--Database:Return Dock list
+note over Docks:Make HTML String
+Main<--Docks:Return string
+note over Main:Update HTML with string
+
+Main->Haulers:Get a list of haulers
+Haulers->Database:Grab them from database
+Haulers<--Database:Return hauler list
+note over Haulers:Make HTML String
+Main<--Haulers:Return string
+note over Main:Update HTML with string
+
+Main->Ships:Get a list of Ships
+Ships->Database:Grab them from database
+Ships<--Database:Return ship list
+note over Ships:Make HTML String
+Main<--Ships:Return string
+note over Main:Update HTML with string
